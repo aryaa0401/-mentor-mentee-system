@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assign Mentor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Assign Mentor to Mentee</h1>
+</header>
+<div class="navbar">
+
+    <button onclick="location.href='index.html'">
+        Home
+    </button>
+
+    <button onclick="history.back()">
+        Back
+    </button>
+
+</div>
+<div class="form-container">
+
+    <h2>Create Assignment</h2>
+
+    <select id="mentor">
+        <option>Select Mentor</option>
+    </select>
+
+    <select id="mentee">
+        <option>Select Mentee</option>
+    </select>
+
+    <input type="date" id="date">
+
+    <label>
+        <input type="checkbox" id="done">
+        Meeting Done
+    </label>
+
+    <br><br>
+
+    <button onclick="assignMentor()">
+        Assign Mentor
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="js/api.js"></script>
+
+<script>
+    loadMentors();
+    loadMentees();
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>System Dashboard</h1>
+</header>
+<div class="navbar">
+
+    <button onclick="location.href='index.html'">
+        Home
+    </button>
+
+    <button onclick="history.back()">
+        Back
+    </button>
+
+</div>
+<div class="dashboard-container">
+
+    <div class="dash-card">
+        <h2>Total Mentors</h2>
+        <p id="mentors">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h2>Total Mentees</h2>
+        <p id="mentees">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h2>Total Assignments</h2>
+        <p id="assignments">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h2>Meetings Done</h2>
+        <p id="done">0</p>
+    </div>
+
+    <div class="dash-card">
+        <h2>Meetings Pending</h2>
+        <p id="pending">0</p>
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+
+<script>
+    loadDashboard();
+</script>
+
+</body>
+
+</html>

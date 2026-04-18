@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Assignments</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>All Assignments</h1>
+</header>
+<div class="navbar">
+
+    <button onclick="location.href='index.html'">
+        Home
+    </button>
+
+    <button onclick="history.back()">
+        Back
+    </button>
+
+</div>
+<div class="table-container">
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Assignment ID</th>
+                <th>Mentor ID</th>
+                <th>Mentee ID</th>
+                <th>Meeting Date</th>
+                <th>Status</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="js/api.js"></script>
+
+<script>
+    loadAssignments();
+</script>
+
+</body>
+
+</html>

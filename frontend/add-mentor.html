@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Mentor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Add Mentor</h1>
+</header>
+<div class="navbar">
+
+    <button onclick="location.href='index.html'">
+        Home
+    </button>
+
+    <button onclick="history.back()">
+        Back
+    </button>
+
+</div>
+<div class="form-container">
+
+    <h2>Enter Mentor Details</h2>
+
+    <input id="name" placeholder="Enter Name">
+
+    <input id="department" placeholder="Enter Department">
+
+    <input id="email" placeholder="Enter Email">
+
+    <button onclick="addMentor()">
+        Add Mentor
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="js/api.js"></script>
+
+</body>
+
+</html>
